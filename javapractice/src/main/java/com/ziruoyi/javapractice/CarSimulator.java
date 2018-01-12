@@ -7,18 +7,13 @@ public class CarSimulator {
         System.out.println("Launching car simulator ...");
 
         Car myToyota = new Car("Blue","Wood");
-
-        System.out.println("The car colour is " + Car.colour);
-
-        System.out.println("myToyota has " + myToyota.getNumberOfSeats() + " seats");
-
         Car myHonda = new Car();
-        System.out.println(Car.colour + " Honda with red " + myHonda.getInterior() + " interior");
+        SelfDrivingCar autoBot = new SelfDrivingCar("Yellow","Plastic") ;
 
         myHonda.drive();
+        autoBot.drive();
+        System.out.println("autoBot colour is: " + autoBot.colour);
+        System.out.println("autoBot interior is: " + autoBot.mInterior);
 
-        Car.colour = "Pink";
-        System.out.println("myHonda's colour is " + Car.colour);
-        System.out.println("myToyota's colour is also " + Car.colour);
     }
 }

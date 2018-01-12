@@ -8,7 +8,7 @@ public class Car {
 
     public static String colour = "Black";
     private int mNumberOfSeats = 5;
-    private String mInterior;
+    protected String mInterior;
 
     public Car() {
         mInterior = "Leather";
